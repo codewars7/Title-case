@@ -24,7 +24,6 @@
 
 
 // solution with split and join methods
-//
 //const titleCase = (str) => {
 //  str = str.toLowerCase().split(' ');
 //  for (var i = 0; i < str.length; i++) {
@@ -36,8 +35,7 @@
 
 // sollution with map
 const titleCase = (str) => {
-  str = str.toLowerCase().split(' ');
-    return str.map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+  str = str.toLowerCase().split(" ")
+  return str.map(word => word[0].toUpperCase() + word.slice(1)).join(' ')
 }
-
 console.log(titleCase("I'm a little tea pot"))
