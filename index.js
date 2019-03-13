@@ -34,8 +34,18 @@
 //titleCase("I'm a little tea pot");
 
 // sollution with map
+//const titleCase = (str) => {
+//  str = str.toLowerCase().split(" ")
+//  return str.map(word => word[0].toUpperCase() + word.slice(1)).join(' ')
+//}
+
+
+// sollution with map and replace. Replace method can use word or regex
+// I used just word
+
 const titleCase = (str) => {
-  str = str.toLowerCase().split(" ")
-  return str.map(word => word[0].toUpperCase() + word.slice(1)).join(' ')
+  str = str.toLowerCase().split(' ')
+  return str.map(word => word.replace(word[0], word[0].toUpperCase())).join(' ')
 }
+
 console.log(titleCase("I'm a little tea pot"))
